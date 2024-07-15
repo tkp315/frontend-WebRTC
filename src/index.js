@@ -4,12 +4,15 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { SocketProvider } from './Contex/SocketContext';
+import { BrowserRouter } from 'react-router-dom';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <SocketProvider>
+<BrowserRouter>
+<SocketProvider>
     <App />
   </SocketProvider>
+</BrowserRouter>
 );
 
 // If you want to start measuring performance in your app, pass a function
